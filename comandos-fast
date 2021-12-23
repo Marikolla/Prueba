@@ -1,0 +1,66 @@
+
+git :
+
+git config --global user.email "juanjoalanccay@gmail.com" configurar
+para el usuario
+
+git config --global user.name "juanjo" configuracion del nombre
+
+git init --inicia el repositorio local
+git status veo ls archivos su estado
+
+git add nombreDeArchivo.ext  esto sube archivo
+git add . sube toda la carpeta archivos q no fueron subidos aun al area de trabajo
+
+git commit -m "version" esto sube los archivos al repositorio local hace un commit 
+
+git log este comando veo los commit que se an echo
+
+con esto ya estaria versionado mi repositorio en formal local
+
+git checkout -- nombrearchivo Este comando dice que el archivo no se va a subir si tiene algun cambio no se subira.
+
+integracion con github:
+
+primero en nuestro repositorio new crear nuevo proyecto 
+git remote add origin https://github.com/juanjjo/Proyecto-Prueba.git Esto
+vincula el repositorio local al de la nube
+
+git push -u origin master Este comando ahora sube todo el proyecto local a la nube
+
+git clone link Este comando clona el proyecto 
+
+git push orgin master : este comando sube el commit y la ultima actualizacion
+
+git pull : este comando baja las actualizaciones q nos falta en nuestro repo local
+
+----------------
+para saber que hay y los commits 
+git log --oneline
+
+para crear una rama 
+git branch nombrerama
+
+para movernos a una rama
+git checkout nombrerama
+
+saber las ramas que hay
+git chackout
+
+para fucionar debemos estar en la master
+git merge nombreRama a unir 
+
+para descargar las ramas
+git pull
+para cambiar a la rama  aveses no ve la rama asi q con track lo obliga la hdp
+git checkout --track origin/nueva_rama
+
+para q elimine todo los cambios locales  y vuelva a la version anterior commit
+git reset --hard
+
+commit para indicar en trello el numero de la tarea
+commit -m "#ABC-123 hello world" 
+git push origin <nombre_de_tu_rama> --force
+
+54; 568
+; 568
